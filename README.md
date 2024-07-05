@@ -29,3 +29,4 @@ hugo server -t YOURTHEME
 6. If you intend to build a theme that does not fit in the content structure provided in this repository, then you are still more than welcome to submit it for review at the [Hugo Themes](https://github.com/gohugoio/hugoThemes/issues) repository
 # ATK-log
 # ATK-log
+# ATK-log
