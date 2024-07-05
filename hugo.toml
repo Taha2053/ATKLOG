@@ -1,7 +1,8 @@
 baseURL = 'https://ATKlog.github.io/'
 languageCode = 'en-us'
 title = 'ATK`log'
-theme = "paper"
+theme: 
+  - github.com/Taha2053/hugo-paper
 enableInlineShortcodes = true
 
 
