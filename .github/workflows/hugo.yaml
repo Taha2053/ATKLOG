@@ -61,6 +61,8 @@ jobs:
             --gc \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"   
+      - name: List public directory
+        run: ls -R ./public
       - name: Create .nojekyll file
         run: touch ./public/.nojekyll       
       - name: Upload artifact
