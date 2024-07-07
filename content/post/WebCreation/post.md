@@ -234,7 +234,7 @@ There are several ways to host and deploy your website, in this article I will o
     ![alt text](/ATKlog/Images/Build_and_deploy1.png)
     
     after that click on it and you will find the build and deploy, under the deploy  you will find your website URL :
-    ![alt text](https://github.com/Taha2053/ATKlog/blob/main/static/Images/Build_and_deploy2.png?raw=true)
+    ![alt text](/ATKlog/Images/Build_and_deploy2.png)
 
 That means your website has been successfully deployed.
 
