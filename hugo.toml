@@ -1,4 +1,4 @@
-baseURL = 'https://taha2053.github.io//'
+baseURL = '"https://Taha2053.github.io/ATKlog/"'
 languageCode = 'en-us'
 title = 'ATK`log'
 theme= 'paper'
