@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hugo on ATK`log</title>
-    <link>http://localhost:1313/ATKlog/tags/hugo/</link>
+    <link>https://Taha2053.github.io/ATKlog/tags/hugo/</link>
     <description>Recent content in Hugo on ATK`log</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 06 Jul 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/ATKlog/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://Taha2053.github.io/ATKlog/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title> How to make a static website using Hugo </title>
-      <link>http://localhost:1313/ATKlog/post/webcreation/post/</link>
+      <link>https://Taha2053.github.io/ATKlog/post/webcreation/post/</link>
       <pubDate>Sat, 06 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ATKlog/post/webcreation/post/</guid>
+      <guid>https://Taha2053.github.io/ATKlog/post/webcreation/post/</guid>
       <description>In this artictle I&amp;rsquo;ll explain in a simple and fast way how to create a website using Hugo and the themes available with it, how to choose the theme, apply it and modify it, and finally how to build and deploy your webste using Github pages. But for curious learners here is the full Hugo documentaion for a deep dive into all the details.&#xA;Website Creation Installation This section will explain the installtion process for Windows and MacOS users specefically.</description>
     </item>
   </channel>

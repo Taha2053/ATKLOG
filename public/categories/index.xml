@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on ATK`log</title>
-    <link>http://localhost:1313/ATKlog/categories/</link>
+    <link>https://Taha2053.github.io/ATKlog/categories/</link>
     <description>Recent content in Categories on ATK`log</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 06 Jul 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/ATKlog/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://Taha2053.github.io/ATKlog/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Themes</title>
-      <link>http://localhost:1313/ATKlog/categories/themes/</link>
+      <link>https://Taha2053.github.io/ATKlog/categories/themes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ATKlog/categories/themes/</guid>
+      <guid>https://Taha2053.github.io/ATKlog/categories/themes/</guid>
       <description></description>
     </item>
     <item>
       <title>Web</title>
-      <link>http://localhost:1313/ATKlog/categories/web/</link>
+      <link>https://Taha2053.github.io/ATKlog/categories/web/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ATKlog/categories/web/</guid>
+      <guid>https://Taha2053.github.io/ATKlog/categories/web/</guid>
       <description></description>
     </item>
     <item>
       <title>Syntax</title>
-      <link>http://localhost:1313/ATKlog/categories/syntax/</link>
+      <link>https://Taha2053.github.io/ATKlog/categories/syntax/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ATKlog/categories/syntax/</guid>
+      <guid>https://Taha2053.github.io/ATKlog/categories/syntax/</guid>
       <description></description>
     </item>
   </channel>

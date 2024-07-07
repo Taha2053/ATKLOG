@@ -231,7 +231,7 @@ There are several ways to host and deploy your website, in this article I will o
     git push -u origin main
     ```
 8. Now on the Github repository, go to Actions and you will see a new workflow with a yellow circle, let it build untill it is green :
-    ![alt text](/ATKlog/Images/Build_and_deploy1.png)
+    ![alt text](./Build_and_deploy1.png)
     
     after that click on it and you will find the build and deploy, under the deploy  you will find your website URL :
     ![alt text](/ATKlog/Images/Build_and_deploy2.png)
