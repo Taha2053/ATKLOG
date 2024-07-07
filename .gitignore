@@ -11,8 +11,6 @@ _test
 *.[568vq]
 [568vq].out
 
-go.mod
-go.sum
 *.cgo1.go
 *.cgo2.c
 _cgo_defun.c
@@ -24,6 +22,32 @@ _testmain.go
 *.exe
 *.test
 
-
+# macOS-specific files
 .DS_Store
+
+# Hugo-specific files
 .hugo_build.lock
+/public/
+/resources/_gen/
+/assets/jsconfig.json
+hugo_stats.json
+
+# Temporary files
+*.log
+*.bak
+*.tmp
+
+# IDE-specific files (optional)
+.vscode/
+.idea/
+
+# Dependency directories (uncomment if you're not using Go modules)
+# /vendor/
+
+# If you're using npm or yarn for asset management
+/node_modules/
+yarn-error.log
+
+# Uncomment these if you're not using Go modules
+# go.mod
+# go.sum
