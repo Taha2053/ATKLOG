@@ -14,6 +14,19 @@ categories = [
 +++
 In this artictle I'll explain in a simple and fast way how to create a website using Hugo and the themes available with it, how to choose the theme, apply it and modify it, and finally how to build and deploy your webste using Github pages. <br>
 But for curious learners here is the full Hugo [documentaion](https://gohugo.io/about/) for a deep dive into all the details.
+
+<details>
+    <summary> <b>Table of Content</b> </summary>
+
+1. [Website Creation](#website-creation)
+2. [Content Adding](#content-adding)
+3. [Building, Hosting and Deploying using Github Pages](#building-hosting-and-deploying-using-github-pages)
+4. [Modifying the theme](#modifying-the-theme)
+5. [Modify the theme after deploying your website](#modify-the-theme-after-deploying-your-website)
+
+</details>
+
+
 ## Website Creation
 ### Installation
 This section will explain the installtion process for Windows and MacOS users specefically.<br>
