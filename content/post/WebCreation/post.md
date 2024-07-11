@@ -417,6 +417,3 @@ Additionally, make sure your `hugo.yaml` file is correctly referencing your cust
 ```yaml
 theme: 'github.com/YourGitHubUsername/hugo-paper'
 ```
-
-
-    
