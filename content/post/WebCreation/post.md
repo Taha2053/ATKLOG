@@ -235,7 +235,188 @@ There are several ways to host and deploy your website, in this article I will o
     
     after that click on it and you will find the build and deploy, under the deploy  you will find your website URL :
     ![alt text](https://github.com/Taha2053/ATKlog/blob/main/public/post/WebCreation/post/Build_and_deploy2.png?raw=true)
-Test case
-That means your website has been successfully deployed.
+
+That means your website has been successfully deployed.<br>
+
+## Modifying the theme
+
+
+If you want to apply some changes to the theme itself these are the steps to follow :
+
+1. First, fork the theme repository on GitHub:
+    - Go to the github repository of the theme you have used.
+    - Click the "Fork" button in the top right corner
+    - This will create a copy of the repository under your GitHub account
+2. Now, in your local project, update the submodule to point to your forked repository:
+    
+    ```bash
+    git submodule set-url themes/paper <https://github.com/YOUR_GITHUB_USERNAME/THEME_NAME.git>
+    
+    ```
+    
+    Replace `YOUR_GITHUB_USERNAME` with your actual GitHub username, and replace `THEME_NAME` with the actual Theme name.
+    
+3. Update your `.gitmodules` file to reflect this change. It should look something like this:
+    
+    ```bash
+    [submodule "themes/THEME_NAME"]
+        path = themes/THEME_NAME
+        url = <https://github.com/YOUR_GITHUB_USERNAME/THEME_NAME.git>
+    
+    ```
+    
+4. Now, navigate to the theme directory and add your forked repository as a remote:
+    
+    ```bash
+    cd themes/THEME_NAME
+    git remote add myorigin <https://github.com/YOUR_GITHUB_USERNAME/THEME_NAME.git>
+    
+    ```
+    
+5. Create a new branch for your changes:
+    
+    ```bash
+    git checkout -b my-custom-theme
+    
+    ```
+    
+6. Make your changes, then stage and commit them:
+    
+    ```bash
+    git add .
+    git commit -m "Customize theme"
+    
+    ```
+    
+7. Push your changes to your forked repository:
+    
+    ```bash
+    git push myorigin my-custom-theme
+    
+    ```
+    
+8. Go back to your main project directory:
+    
+    ```bash
+    cd ../..
+    
+    ```
+    
+9. Update the submodule reference in your main project:
+    
+    ```bash
+    git add themes/paper
+    git commit -m "Update theme submodule to custom branch"
+    
+    ```
+    
+10. Push your main project:
+    
+    ```bash
+    git push
+    
+    ```
+    
+11. Update your Hugo configuration (`config.toml` or `config.yaml`) to use your custom branch of the theme:
+    
+    ```yaml
+    #yaml
+    theme:
+      - github.com/YOUR_GITHUB_USERNAME/THEME_NAME
+    #toml
+    theme = 'THEME_NAME'
+    
+    ```
+    
+12. Commit and push this change:
+    
+    ```bash
+    git add config.yaml  # or config.toml
+    git commit -m "Update theme configuration"
+    git push
+    
+    ```
+    
+
+These steps should allow you to make changes to your own fork of the theme, push those changes, and have your main project use your customized version of the theme.
+
+Remember to replace `YOUR_GITHUB_USERNAME` with your actual GitHub username in all the commands and file contents.
+
+After completing these steps, when you deploy your site, it should use your customized version of the theme. If you're using GitHub Actions for deployment, you might need to update your workflow to ensure it's checking out submodules correctly.
+
+## Modify the theme after deploying your website
+Now if you want to make some changes to the theme, after having deploying your website, this is how you do :
+
+1. Navigate to your theme folder:
+    
+    ```bash
+    cd themes/paper
+    
+    ```
+    
+2. Check which branch you're on:
+    
+    ```bash
+    git branch
+    
+    ```
+    
+    If you're not on a custom branch, create one:
+    
+    ```bash
+    git checkout -b my-custom-theme
+    
+    ```
+    
+3. Stage your changes:
+    
+    ```bash
+    git add .
+    
+    ```
+    
+4. Commit your changes:
+    
+    ```bash
+    git commit -m "Describe your theme changes"
+    
+    ```
+    
+5. Push these changes to your fork of the theme repository:
+    
+    ```bash
+    git push origin my-custom-theme
+    
+    ```
+    
+6. Go back to your main project directory:
+    
+    ```bash
+    cd ../..
+    
+    ```
+    
+7. Now, update the submodule reference in your main project:
+    
+    ```bash
+    git add themes/THEME_NAME
+    git commit -m "Update theme submodule to latest custom changes"
+    
+    ```
+    
+8. Push your main project changes:
+    
+    ```bash
+    git push
+    
+    ```
+    
+9. Check the GitHub Actions tab to ensure the deployment process runs successfully.
+
+Additionally, make sure your `hugo.yaml` file is correctly referencing your custom theme branch:
+```yaml
+theme: 'github.com/YourGitHubUsername/hugo-paper'
+```
+
 
     
